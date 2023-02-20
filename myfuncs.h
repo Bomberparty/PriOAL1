@@ -8,9 +8,9 @@ void console_input();
 
 void file_input();
 
-void cels_to_farenheit(double* farenheit, long &n);
+void cels_to_farenheit(double* farenheit, long n);
 
-string add_space(int &amount_of_space);
+string add_space(int amount_of_space);
 
 int number_width(int number);
 
