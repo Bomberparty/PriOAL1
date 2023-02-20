@@ -2,7 +2,6 @@
 #include <string>
 #include <algorithm>
 #include "myfuncs.cpp"
-#include "myconsts.h"
 
 using namespace std;
 
