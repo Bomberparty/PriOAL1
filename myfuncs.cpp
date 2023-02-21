@@ -42,6 +42,7 @@ long file_input()
         {
             cout << "Файл не создан! Создайте файл input.txt в директории с программой." << endl
             << "Затем перезапустите программу и попробуйте ещё раз." <<endl << endl;
+            input.close();
             exit(1);
         }
         long n;
@@ -55,6 +56,7 @@ long file_input()
         {
             cout << "Значение некорректно! n - целое число." << endl
             << "Вставьте нужное число в файл и перезапустите программу." << endl << endl;
+            input.close();
             exit(1);
         }
 
@@ -62,8 +64,10 @@ long file_input()
         {
             cout << "Значение некорректно! n - натуральное число." << endl 
             << "Вставьте нужное число в файл и перезапустите программу." << endl << endl;
+            input.close();
             exit(1);
         }
+        input.close();
         return n;
     }
     return -1;
@@ -117,4 +121,5 @@ void file_output(double* to_out, long &n)
         output << i << add_space((coulmn_width[0] - number_width(i)))
         << to_out[i] << add_space((coulmn_width[1] - number_width(i))) << endl;  
     }
+    output.close();
 }
